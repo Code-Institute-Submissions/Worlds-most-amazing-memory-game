@@ -86,5 +86,27 @@ also providing an good User Experience.
 * If they dont understand they will need information on how to play.
 * Fun!
 
+## Design Choices 
+The theme for this game is going to be comic book Marvel characters. 
+The colour scheme will need to be bright and appealing and try to 
+co inside with the imagery of the marvel universe characters used on each of the 
+memory game tiles. 
+
+### Fonts:
+
+### Colours:
+Using knowledge from prior research of the marvel comic books the colours will
+need to be bright and eye cacthing with a darker background and I will try to match the colour scheme to
+the imagery of the marvel comic book characters used.
+
+* background-color: #061435 dark blue 
+* Tile colour: #ed1d24 red
+* lettering colour: #fff white
+
+
+### Styling:
+
+
+## Wireframes:
 
 
