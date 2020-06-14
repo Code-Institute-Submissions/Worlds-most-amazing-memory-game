@@ -112,6 +112,10 @@ just to get a better understanding of how all the elements were going to look
 on the page.
 https://cacoo.com/diagrams/vlU8XtYRdlYiqKoW/B4C8B.
 
-
+## Features:
+* Timer
+* added time back to timer whenever 2 cards are matched in a modal popup
+* Flip Cards with matchinbg pictures
+* easy, medium and hard setting
 
 
