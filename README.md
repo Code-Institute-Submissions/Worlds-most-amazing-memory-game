@@ -118,4 +118,12 @@ https://cacoo.com/diagrams/vlU8XtYRdlYiqKoW/B4C8B.
 * Flip Cards with matchinbg pictures
 * easy, medium and hard setting
 
+## Technologies Used:
+
+
+### Languages;
+* HTML
+* CSS
+* JavaScript
+
 
