@@ -2,7 +2,7 @@
 
 ## Contents
 ---
-* ### UX
+ ### UX
   * Project Goals
   * Target Audience Goals
   * Site Owner Goals
@@ -13,18 +13,18 @@
        + Colours
        + Styling
 
-* ### Wireframes 
-* ### Features 
+ ### Wireframes 
+ ### Features 
 
    * Features that have been developed
    
    * Features that will be implemented in the future
 
-* ### Technologies Used 
-* ### Testing 
-* ### Bugs 
-* ### Deployment 
-* ### Credits 
+ ### Technologies Used 
+ ### Testing 
+ ### Bugs 
+ ### Deployment 
+ ### Credits 
 
 
 
