@@ -107,6 +107,6 @@ the imagery of the marvel comic book characters used.
 ## Wireframes:
 
 I've used cacoo.com to do a mockup of the website design in black and white.
-There is a wirefram design for desktop tablet and mobile.
+There is a wireframe design for desktop tablet and mobile.
 
 
