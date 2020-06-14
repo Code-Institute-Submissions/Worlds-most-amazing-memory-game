@@ -10,11 +10,8 @@
   * Design Choices
 
        + Fonts
-       + Icons
        + Colours
        + Styling
-       + Images
-       + Backgrounds
 
 * ### Wireframes 
 * ### Features 
@@ -109,7 +106,7 @@ the imagery of the marvel comic book characters used.
 
 ## Wireframes:
 
-I've used Blasamiq to do a mockup of the website design in black and white.
-
+I've used cacoo.com to do a mockup of the website design in black and white.
+There is a wirefram design for desktop tablet and mobile.
 
 
