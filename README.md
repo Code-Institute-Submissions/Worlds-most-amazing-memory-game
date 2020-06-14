@@ -127,3 +127,9 @@ https://cacoo.com/diagrams/vlU8XtYRdlYiqKoW/B4C8B.
 * JavaScript
 
 
+### Tools and Libraries:
+* JQuery
+* GIT
+* Bootstrap
+* Font awesome
+
