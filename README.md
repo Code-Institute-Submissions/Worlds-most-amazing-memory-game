@@ -48,19 +48,21 @@ also providing an good User Experience.
 ### User Stories:
 
 #### Gary
-"As a user i want to be able to understand and play the game very quickly"
+"As a user i want to be able to understand the game very quickly once i start playing."
 
 #### Steve
 
-"Too may games out there are hard to get to grips with and i'm looking for something easy and fun"
+"Too may games out there are hard to get to grips with and as a user i'm looking for something easy and fun when i play the game"
 
 #### Graham
 
-"when i go online to play a game i dont want to have advertising shoved down my throat for ages before i get to play a game"
+"as a user when i go online to play a game i dont want to have advertising shoved down my throat for ages before i get to play a game
+so i expect to be able to play quickly once i load up the page"
 
 #### Colin
 
-"I just want something i can pck up quickly on my breaks at work."
+"as a user I want something i can pck up quickly on my breaks at work therefore i expect 
+something that doesnt take a long time to learn once i start playing."
 
 ### Site Owner Goals:
 
@@ -110,7 +112,7 @@ the imagery of the marvel comic book characters used.
 I've used cacoo.com to do a mockup of the website design in black and white.
 First I started by doing a very basic wireframe design for desktop tablet and mobile
 just to get a better understanding of how all the elements were going to look 
-on the page.  Ther is a m,ockup in the subfolder 'wireframes' and below is a link to the
+on the page.  There are mockups in the subfolder 'wireframes' and below is a link to the
 website i used to make them.
 https://cacoo.com/diagrams/vlU8XtYRdlYiqKoW/B4C8B.
 
