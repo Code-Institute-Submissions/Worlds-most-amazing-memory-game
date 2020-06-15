@@ -4,7 +4,8 @@
 ---
  ### UX
   * Project Goals
-  * Target Audience Goals
+  * User Goals
+  * User Stories
   * Site Owner Goals
   * User Requirements and Expectations
   * Design Choices
