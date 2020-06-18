@@ -14,6 +14,7 @@ body{
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+    
 
 }
 
@@ -31,13 +32,14 @@ body{
 .back-face{
     position: absolute;
     backface-visibility: hidden;
-    
+    border-radius: 5px;
 }
 
 .front-face{
     top: 50%;
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    border-radius: 5px;
 }
 
     
