@@ -1,17 +1,23 @@
-
-
 body{
     height: 100vh;
     background: #061435;
-    
 }
 
 #memory-game{
     height: 800px;
     width: 800px;
     margin: auto;
-    
+    }
+.memory-card{
+    transform: scale(1);
+
 }
+
+.memory-card:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
 
 .back-face{
     position: absolute;
@@ -21,8 +27,6 @@ body{
     top: 50%;
 }
     
-
-
 img{
     margin-top: 10px;
     width: 95%;
