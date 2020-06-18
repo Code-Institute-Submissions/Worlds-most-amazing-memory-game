@@ -6,10 +6,11 @@ let memoryCard1, memoryCard2;
 function flipCard(){
     this.classList.add('flip');
 
-    if(cardFlipped) {
+    if(!cardFlipped) {
     // first click
     cardFlipped = true;
     memoryCard1 = this;
+
     // second click
   } else {
       cardFlipped = false;
