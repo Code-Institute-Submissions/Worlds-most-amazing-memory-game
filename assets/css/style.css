@@ -7,15 +7,23 @@ body{
     height: 800px;
     width: 800px;
     margin: auto;
+    perspective: 1000px;
     }
+
 .memory-card{
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
 
 }
 
 .memory-card:active{
     transform: scale(.97);
     transition: transform .2s;
+}
+
+.memory-card.flip{
+    transform: rotateY(180deg);
 }
 
 
@@ -26,6 +34,12 @@ body{
 .front-face{
     top: 50%;
 }
+
+.back-face.front-face{
+    
+
+}
+
     
 img{
     margin-top: 10px;
