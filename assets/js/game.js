@@ -17,7 +17,6 @@ function flipCard(){
     return;
     }
     // second click
-
       memoryCard2 = this;
 
     checkCardsMatch();  
@@ -59,7 +58,7 @@ function resetGame(){
 
 (function shuffleHeroes(){
     cards.forEach(card => {
-        let randomize = math.floor(math.random() * 12);
+        let randomize = math.floor(math.random() * 16);
         card.style.order = randomize;
 
     });
