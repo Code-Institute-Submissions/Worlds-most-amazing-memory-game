@@ -24,20 +24,20 @@ body{
 
 .memory-card.flip{
     transform: rotateY(180deg);
+    
 }
 
 
 .back-face{
     position: absolute;
+    backface-visibility: hidden;
+    
 }
 
 .front-face{
     top: 50%;
-}
-
-.back-face.front-face{
-    
-
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
     
