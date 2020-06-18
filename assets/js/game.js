@@ -57,4 +57,12 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 
+(function shuffleHeroes(){
+    cards.forEach(card => {
+        let randomize = math.floor(math.random() * 12);
+        card.style.order = randomize;
+
+    });
+})();
+
 memoryCards.forEach(card => card.addEventListener('click', flipCard));
