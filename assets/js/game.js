@@ -1,7 +1,7 @@
 const memoryCards = document.querySelectorAll('.memory-card');
 
 let cardFlipped = false;
-let firstCard, secondCard;
+let memoryCard1, memoryCard2;
 
 function flipCard(){
     this.classList.add('flip');
@@ -9,22 +9,22 @@ function flipCard(){
     if(cardFlipped) {
     // first click
     cardFlipped = true;
-    firstCard = this;
+    memoryCard1 = this;
     // second click
   } else {
       cardFlipped = false;
-      secondCard = this;
+      memoryCard2 = this;
 
       //check to see if cards match?
-      if (firstCard.dataset.framework === secondCard.dataset.framework) {
+      if (memoryCard1.dataset.framework === memoryCard2.dataset.framework) {
           //if its a match
-          firstCard.removeEventListener('click', flipCard);
-          secondCard.removeEventListener('click', flipCard);
+          memoryCard1.removeEventListener('click', flipCard);
+          memoryCard2.removeEventListener('click', flipCard);
       } else {
           //the cards dont match
           setTimeout(() =>{
-          firstCard.classList.remove('flip');
-          secondCard.classList.remove('flip');
+          memoryCard1.classList.remove('flip');
+          memoryCard2.classList.remove('flip');
       }, 1500);
     }
   }
