@@ -1,3 +1,70 @@
+const gameRef = document.querySelector('#memory-game');
+const heroes = [
+  {
+    name: 'Black Widow',
+    imageUrl: 'black-widow.jpg',
+  },
+  {
+    name: 'captain america',
+    imageUrl: 'captain-america.jpg',
+  },
+  {
+    name: 'The Hulk',
+    imageUrl: 'the-hulk.jpg',
+  },
+  {
+    name: 'Captain Marvel',
+    imageUrl: 'captain-marvel.jpg',
+  },
+  {
+    name: 'Spiderman',
+    imageUrl: 'spiderman.jpg',
+  },
+  {
+    name: 'Star Lord',
+    imageUrl: 'star-lord.jpg',
+  },
+  {
+    name: 'Thanos',
+    imageUrl: 'thanos.jpg',
+  },
+  {
+    name: 'Thor',
+    imageUrl: 'thor.jpg',
+  },
+];
+const shuffle = (heroCards) => {
+  heroCards.sort(() => Math.random() - 0.5);
+};
+const createHtmlForGame = (shuffledHeroes) => {
+  shuffledHeroes.forEach((hero) => {
+    // Create HTML
+    let html = ` <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
+              <img class="front-face" src="assets/images/${hero.imageUrl}" alt="${hero.name}">`;
+    
+            document.getElementsByClassName('.memory-game').innerHTML += (html);
+    
+
+  });
+};
+// Shuffle the card and store in variable
+const shuffledCards = shuffle(heroes);
+// Write HTML
+createHtmlForGame(shuffledCards);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const memoryCards = document.querySelectorAll('.memory-card');
 
 let cardFlipped = false;
@@ -56,12 +123,12 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 
-(function shuffleHeroes(){
-    cards.forEach(card => {
+/*(function shuffleHeroes(){
+    memoryCards.forEach(card => {
         let randomize = math.floor(math.random() * 16);
-        card.style.order = randomize;
+        cards.style.order = randomize;
 
     });
-})();
+})();*/
 
 memoryCards.forEach(card => card.addEventListener('click', flipCard));
