@@ -58,8 +58,8 @@ function resetGame(){
 
 (function shuffleHeroes(){
     memoryCards.forEach(card => {
-        let randomize = math.floor(math.random() * 16);
-        cards.style.order = randomize;
+        let randomize = Math.floor(Math.random() * 16);
+        card.style.order = randomize;
 
     });
 })();
