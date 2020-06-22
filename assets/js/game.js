@@ -4,11 +4,18 @@ let cardFlipped = false;
 let memoryCard1, memoryCard2;
 let stopUser = false;
 let winCondition = 0;
+let loseCondition = 30;
+
+   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
 
 function flipCard(){
-
 //flips the cards over
-
+    loseCondition -= 1;
+    document.querySelector('#click-counter').innerHTML ="<div>"+loseCondition+"</div>";
+     if (loseCondition === 0){
+        showloseScreen();
+        return;
+    }
     if (stopUser) return; // stops cards being flipped whilst flipped cards are being checked
     if (this === memoryCard1) return; // when a card has been flipped this code wont run
     this.classList.add('flip');
@@ -23,10 +30,7 @@ function flipCard(){
       memoryCard2 = this;
     checkCardsMatch();  
 
-    if (winCondition === 7){
-        showWinScreen();
-        return;
-    }
+    
   }
 
 
@@ -43,7 +47,11 @@ function checkCardsMatch() {
 function disableCardFlip(){
        memoryCard1.removeEventListener('click', flipCard);
        memoryCard2.removeEventListener('click', flipCard);
-       winCondition +-1;
+       winCondition +=1;
+       if (winCondition === 8){
+        showWinScreen();
+        return;
+    }
        resetGame();
 }
 
@@ -64,16 +72,24 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 // shufles the cards at the beginning of the game
-(function shuffleHeroes(){
+/*(function shuffleHeroes(){
     memoryCards.forEach(card => {
         let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
 
     });
-})();
+})();*/
+
+function playAgain(){
+      location.reload();
+}
 
 function showWinScreen(){
-    concole.log(this);
+    document.querySelector('#memory-game').innerHTML='<div class="losescreen"><h2 class="wintitle">You Win!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
+}
+
+function showLoseScreen(){
+    document.querySelector('#memory-game').innerHTML='<div class="winscreen"><h2 class="wintitle">You Lose!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
 }
 
 memoryCards.forEach(card => card.addEventListener('click', flipCard));
