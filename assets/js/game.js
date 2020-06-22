@@ -13,7 +13,7 @@ function flipCard(){
     loseCondition -= 1;
     document.querySelector('#click-counter').innerHTML ="<div>"+loseCondition+"</div>";
      if (loseCondition === 0){
-        showloseScreen();
+        showLoseScreen();
         return;
     }
     if (stopUser) return; // stops cards being flipped whilst flipped cards are being checked
@@ -72,13 +72,13 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 // shufles the cards at the beginning of the game
-/*(function shuffleHeroes(){
+(function shuffleHeroes(){
     memoryCards.forEach(card => {
         let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
 
     });
-})();*/
+})();
 
 function playAgain(){
       location.reload();
