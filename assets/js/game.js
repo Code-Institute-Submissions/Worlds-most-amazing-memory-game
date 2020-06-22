@@ -3,7 +3,7 @@ const memoryCards = document.querySelectorAll('.memory-card');
 let cardFlipped = false;
 let memoryCard1, memoryCard2;
 let stopUser = false;
-let winCondition = 0;
+let winCondition = 7;
 let loseCondition = 30;
 
   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
@@ -72,13 +72,13 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 // shufles the cards at the beginning of the game
-(function shuffleHeroes(){
+/*(function shuffleHeroes(){
     memoryCards.forEach(card => {
         let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
 
     });
-})();
+})();*/
 
 function playAgain(){
       location.reload();

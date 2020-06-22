@@ -8,6 +8,7 @@ body{
     width: 640px;
     margin: auto;
     perspective: 1000px;
+    text-align: center;
     }
 
 .memory-card{
@@ -38,6 +39,7 @@ body{
 
 .front-face{
     top: 50%;
+    right: 0px;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     border-radius: 5px;
@@ -62,4 +64,19 @@ img{
     font-size: 26px;
     margin: auto;
     border: 2px solid #fff;
+}
+
+.win-title{
+    color: #fff;
+    text-align: center;
+    font-size: 150px;
+
+}
+
+.btn-primary{
+    background-color: #ed1d24;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
 }
