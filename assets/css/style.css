@@ -4,8 +4,8 @@ body{
 }
 
 #memory-game{
-    height: 640px;
-    width: 640px;
+    height: 540px;
+    width: 540px;
     margin: auto;
     perspective: 1000px;
     text-align: center;
@@ -49,9 +49,8 @@ body{
 
     
 img{
-    margin-top: 10px;
-    width: 95%;
-    height: 100px;
+    width:95%;
+    height: 95px;
 }
 #click-counter{
     text-align: center;
