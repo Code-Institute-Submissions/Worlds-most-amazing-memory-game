@@ -4,7 +4,7 @@ let cardFlipped = false;
 let memoryCard1, memoryCard2;
 let stopUser = false;
 let winCondition = 0;
-let loseCondition = 30;
+let loseCondition = 40;
 
   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
 
