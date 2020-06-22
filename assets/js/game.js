@@ -6,12 +6,12 @@ let stopUser = false;
 let winCondition = 0;
 let loseCondition = 30;
 
-   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
+  document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
 
 function flipCard(){
 //flips the cards over
     loseCondition -= 1;
-    document.querySelector('#click-counter').innerHTML ="<div>"+loseCondition+"</div>";
+    document.querySelector('#click-counter').innerHTML ='<div class="lose-counter">'+loseCondition+'</div>';
      if (loseCondition === 0){
         showLoseScreen();
         return;
@@ -85,11 +85,11 @@ function playAgain(){
 }
 
 function showWinScreen(){
-    document.querySelector('#memory-game').innerHTML='<div class="losescreen"><h2 class="wintitle">You Win!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
+    document.querySelector('#memory-game').innerHTML='<div class="losescreen"><h2 class="win-title">You Win!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
 }
 
 function showLoseScreen(){
-    document.querySelector('#memory-game').innerHTML='<div class="winscreen"><h2 class="wintitle">You Lose!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
+    document.querySelector('#memory-game').innerHTML='<div class="winscreen"><h2 class="lose-title">You Lose!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
 }
 
 memoryCards.forEach(card => card.addEventListener('click', flipCard));

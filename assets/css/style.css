@@ -4,8 +4,8 @@ body{
 }
 
 #memory-game{
-    height: 800px;
-    width: 800px;
+    height: 640px;
+    width: 640px;
     margin: auto;
     perspective: 1000px;
     }
@@ -33,6 +33,7 @@ body{
     position: absolute;
     backface-visibility: hidden;
     border-radius: 5px;
+    border: 2px solid #fff;
 }
 
 .front-face{
@@ -40,11 +41,25 @@ body{
     transform: rotateY(180deg);
     backface-visibility: hidden;
     border-radius: 5px;
+    border: 2px solid #fff;
 }
 
     
 img{
     margin-top: 10px;
     width: 95%;
-    height: 150px;
+    height: 100px;
+}
+#click-counter{
+    text-align: center;
+}
+.lose-counter{
+    color: #fff;
+    background-color: #ed1d24;
+    height: 45px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 26px;
+    margin: auto;
+    border: 2px solid #fff;
 }
