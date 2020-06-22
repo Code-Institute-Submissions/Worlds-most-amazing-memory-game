@@ -9,6 +9,7 @@ body{
     margin: auto;
     perspective: 1000px;
     text-align: center;
+    margin-top: 40px;
     }
 
 .memory-card{
@@ -73,10 +74,23 @@ img{
 
 }
 
+.lose-title{
+    color: #fff;
+    text-align: center;
+    font-size: 150px;
+
+}
+
 .btn-primary{
     background-color: #ed1d24;
     height: 45px;
     border: 2px solid #fff;
     border-radius: 5px;
+}
 
+.game-title{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 40px;
 }
