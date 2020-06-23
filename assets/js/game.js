@@ -147,7 +147,7 @@ function showLoseScreen(){
     document.querySelector('#memory-game').innerHTML=`
     <div class="winscreen">
      <h2 class="lose-title">You Lose!</h2>
-      <button id-"play-again" class="btn-primary">Play Again</button>
+      <button id="play-again" class="btn-primary">Play Again</button>
     </div>`;
     document.getElementById("play-again").addEventListener("click", playAgain);
 }
