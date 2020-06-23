@@ -3,7 +3,7 @@ const memoryCards = document.querySelectorAll('.memory-card');
 let cardFlipped = false;
 let memoryCard1, memoryCard2;
 let stopUser = false;
-let winCondition = 0;
+let winCondition = 7;
 let loseCondition = 40;
 
   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
@@ -72,24 +72,36 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 // shufles the cards at the beginning of the game
-(function shuffleHeroes(){
+/*(function shuffleHeroes(){
     memoryCards.forEach(card => {
         let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
 
     });
-})();
+})();*/
+
+  
 
 function playAgain(){
       location.reload();
 }
 
 function showWinScreen(){
-    document.querySelector('#memory-game').innerHTML='<div class="losescreen"><h2 class="win-title">You Win!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
+    document.querySelector('#memory-game').innerHTML=`
+    <div class="losescreen">
+     <h2 class="win-title">You Win!</h2>
+      <button id="play-again" class="btn-primary">Play Again</button>
+    </div>`;
+    document.getElementById("play-again").addEventListener("click", playAgain);
 }
 
 function showLoseScreen(){
-    document.querySelector('#memory-game').innerHTML='<div class="winscreen"><h2 class="lose-title">You Lose!</h2><button onclick="playAgain()"class="btn-primary">Play Again</button></div>';
+    document.querySelector('#memory-game').innerHTML=`
+    <div class="winscreen">
+     <h2 class="lose-title">You Lose!</h2>
+      <button id-"play-again" class="btn-primary">Play Again</button>
+    </div>`;
+    document.getElementById("play-again").addEventListener("click", playAgain);
 }
 
 memoryCards.forEach(card => card.addEventListener('click', flipCard));

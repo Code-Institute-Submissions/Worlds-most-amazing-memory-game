@@ -87,6 +87,13 @@ img{
     border-radius: 5px;
 }
 
+.btn-primary:hover{
+    background-color: #ed1d24;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
 .game-title{
     color: #fff;
     font-size: 70px;
