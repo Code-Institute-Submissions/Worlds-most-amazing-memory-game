@@ -33,7 +33,10 @@ const heroes = [
   {
     name: 'the-hulk',
   }
+  
 ];
+
+
 
 const shuffle = (shufflingHeroes) => {
   shufflingHeroes.sort(() => Math.random() - 0.5);

@@ -1,6 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+
 body{
     height: 100vh;
     background: #061435;
+    font-family: 'Anton', sans-serif;
 }
 
 #memory-game{
