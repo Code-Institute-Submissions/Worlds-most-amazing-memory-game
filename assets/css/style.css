@@ -51,9 +51,11 @@ img{
     width:95%;
     height: 100px;
 }
+
 #click-counter{
     text-align: center;
 }
+
 .lose-counter{
     color: #fff;
     background-color: #ed1d24;
@@ -79,18 +81,20 @@ img{
 
 }
 
-.btn-primary{
+#play-again{
     background-color: #ed1d24;
     height: 45px;
     border: 2px solid #fff;
     border-radius: 5px;
+    color: #fff;
 }
 
-.btn-primary:hover{
-    background-color: #ed1d24;
+#play-again:hover{
+    background-color:#fff;
     height: 45px;
-    border: 2px solid #fff;
+    border: 2px solid #ed1d24;
     border-radius: 5px;
+    color:#ed1d24;
 }
 
 .game-title{
