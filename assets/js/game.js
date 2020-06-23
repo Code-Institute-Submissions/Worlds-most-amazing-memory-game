@@ -6,6 +6,54 @@ let stopUser = false;
 let winCondition = 7;
 let loseCondition = 40;
 
+const gameRef = document.querySelector('#card-row');
+
+const heroes = [ 
+  {
+    name: 'Black-Widow',
+  },
+  {
+    name: 'captain-america',
+  },
+   {
+    name: 'captain-marvel',
+  },
+  {
+    name: 'hawkeye',
+  },
+   {
+    name: 'iron-man',
+  },
+  {
+    name: 'spiderman',
+  },
+   {
+    name: 'thanos',
+  },
+  {
+    name: 'the-hulk',
+  }
+];
+
+
+  const createHtmlForGame = (heroCards) => {
+    heroCards.forEach((hero) => {
+    // Create HTML
+    let html = ` 
+        <div class="memory-card col-sm-6 col-md-4 col-lg-3 my-1" data-framework="${hero.name}">
+         <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
+          <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
+        </div>`;
+
+
+        gameRef.appendChild(html);  
+
+  });
+  
+};
+// Write HTML
+createHtmlForGame(heroes);
+
   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
 
 function flipCard(){
