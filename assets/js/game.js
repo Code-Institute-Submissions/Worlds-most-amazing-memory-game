@@ -60,14 +60,6 @@ const shuffledHeroes = shuffle(heroes);
 // Write HTML
 createHtmlForGame(heroes);
 
-// shufles the cards at the beginning of the game
-/*function shuffleHeroes(){
-    memoryCards.forEach(card => {
-        let randomize = Math.floor(Math.random() * 16);
-        card.style.order = randomize;
-
-    });
-};*/
 
 
   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
