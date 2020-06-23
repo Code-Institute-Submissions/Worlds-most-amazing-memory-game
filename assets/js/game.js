@@ -1,4 +1,4 @@
-const memoryCards = document.querySelectorAll('.memory-card');
+
 
 let cardFlipped = false;
 let memoryCard1, memoryCard2;
@@ -61,7 +61,7 @@ const shuffledHeroes = shuffle(heroes);
 createHtmlForGame(heroes);
 
 
-
+  const memoryCards = document.querySelectorAll('.memory-card');
   document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
 
 function flipCard(){
@@ -127,14 +127,6 @@ function resetGame(){
     [cardFlipped, stopUser] = [false, false];
     [memoryCard1, memoryCard2] = [null,null];
 }
-// shufles the cards at the beginning of the game
-(function shuffleHeroes(){
-    memoryCards.forEach(card => {
-        let randomize = Math.floor(Math.random() * 16);
-        card.style.order = randomize;
-
-    });
-})();
 
   
 
