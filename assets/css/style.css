@@ -40,7 +40,6 @@ body{
 
 .front-face{
     top: 50%;
-    right: 0px;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     border-radius: 5px;
@@ -50,7 +49,7 @@ body{
     
 img{
     width:95%;
-    height: 95px;
+    height: 100px;
 }
 #click-counter{
     text-align: center;

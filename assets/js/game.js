@@ -10,7 +10,7 @@ const gameRef = document.querySelector('#card-row');
 
 const heroes = [ 
   {
-    name: 'Black-Widow',
+    name: 'black-widow',
   },
   {
     name: 'captain-america',
@@ -39,15 +39,13 @@ const heroes = [
   const createHtmlForGame = (heroCards) => {
     heroCards.forEach((hero) => {
     // Create HTML
-    let html = ` 
+
+
+        gameRef.innerHTML +=  ` 
         <div class="memory-card col-sm-6 col-md-4 col-lg-3 my-1" data-framework="${hero.name}">
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
-        </div>`;
-
-
-        gameRef.appendChild(html);  
-
+        </div>`
   });
   
 };
@@ -120,13 +118,13 @@ function resetGame(){
     [memoryCard1, memoryCard2] = [null,null];
 }
 // shufles the cards at the beginning of the game
-/*(function shuffleHeroes(){
+(function shuffleHeroes(){
     memoryCards.forEach(card => {
         let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
 
     });
-})();*/
+})();
 
   
 
