@@ -37,6 +37,9 @@ const heroes = [
 ];
 
 
+let duplicateHeroes = heroes.concat(heroes);
+
+
 
 const shuffle = (shufflingHeroes) => {
   shufflingHeroes.sort(() => Math.random() - 0.5);
@@ -49,19 +52,18 @@ const shuffle = (shufflingHeroes) => {
 
 
         gameRef.innerHTML +=  ` 
-        <div class="memory-card col-sm-6 col-md-4 col-lg-3 my-1" data-framework="${hero.name}">
+        <div class="memory-card col-sm-4 col-md-4 col-lg-3 my-1" data-framework="${hero.name}">
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`
   });
   
 };
+// Shuffle the cards
+shuffle(duplicateHeroes);
 
-// Shuffle the card and store in variable
-shuffle(heroes);
-
-// Write HTML
-createHtmlForGame(heroes);
+// Write HTMLwith shuffles cards
+createHtmlForGame(duplicateHeroes);
 
 
   const memoryCards = document.querySelectorAll('.memory-card');
