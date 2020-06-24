@@ -3,7 +3,7 @@
 let cardFlipped = false;
 let memoryCard1, memoryCard2;
 let stopUser = false;
-let winCondition = 7;
+let winCondition = 0;
 let loseCondition = 40;
 
 const gameRef = document.querySelector('#card-row');
