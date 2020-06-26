@@ -52,7 +52,7 @@ const shuffle = (shufflingHeroes) => {
 
 
         gameRef.innerHTML +=  ` 
-        <div class="memory-card col-sm-4 col-md-4 col-lg-3 my-1" data-framework="${hero.name}">
+        <div class="memory-card col-4 col-md-3 col-lg-3 my-1" data-framework="${hero.name}">
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`
@@ -67,12 +67,12 @@ createHtmlForGame(duplicateHeroes);
 
 
   const memoryCards = document.querySelectorAll('.memory-card');
-  document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"</div>";
+  document.querySelector('#click-counter').innerHTML ="<div class='lose-counter'>"+loseCondition+"  Clicks Left!</div>";
 
 function flipCard(){
 //flips the cards over
     loseCondition -= 1;
-    document.querySelector('#click-counter').innerHTML ='<div class="lose-counter">'+loseCondition+'</div>';
+    document.querySelector('#click-counter').innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
      if (loseCondition === 0){
         showLoseScreen();
         return;
