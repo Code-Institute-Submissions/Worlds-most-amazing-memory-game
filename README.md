@@ -191,5 +191,20 @@ Verdict : This test passed as the click counter works on all devices.
 
 Plan : the main aim of the game was to match cards that showed up when the user clicked on them and they would have to remember them to find the matching cards.
 Implementation : i used javascript to make the cards flip when the user clicked on them by adding a class with another image called flip. i learned this from youtube.
- Result : the cards flip over then the user clicks and they stay flipped over when two cards are matched.
+Result : the cards flip over then the user clicks and they stay flipped over when two cards are matched.
 Verdict : the cards stay matched and flip back if they dont on all devices with no issues.
+
+
+## Bugs
+
+### Bugs during development
+
+* My wincodition variable had a +- instead of a += which meant i couldnt get the code to work for a long time. To fix the issue i had a tutor look to point me in the right direction which helped massively.
+* When i wanted to duplicate the array of heroes at the beginning of my code i couldnt seem to find a way without writing them out twice.  A student saw my code snippet and helped me out.
+* I was having trouble using "" and '' when writing out html code in javascript.  My mentor reminded me about template literals which fixed the issue.
+* Image sizing has been a massive issue on the site as the hero images will not stay the same as the back face marvel logo images. still need to fix this.
+* i tried making a shuffle function but kept failing because i wasnt using a capital M for the math.random. i had a friend look at it and he pointed it out for me.
+* The shuffle function then didnt work once i added the html function at the top so i had to add a new way of shuffling the cards which did it before they were written into the html.  it didnt work for a long time as i had the wrong spelling in the function after a lot of inspection i found the problem.
+* The gameRef.innerHTML variable was actually gamreRef.appendchild() but this didnt work and i couldnt work out why so after some research i changed it to the code you see now as gameRef.innerHTML() which did the trick.
+
+
