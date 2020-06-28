@@ -93,7 +93,7 @@ co inside with the imagery of the marvel universe characters used on each of the
 memory game tiles. 
 
 ### Fonts:
-I chose to use the font Anton as it was the clsoest i could find to a comicbook style font as the actual marvel font is 
+I chose to use the font Anton as it was the closest i could find to a comic book style font as the actual marvel font is 
 copywritten. but i think it fits in well with the style.
 
 ### Colours:
@@ -104,6 +104,9 @@ the imagery of the marvel comic book characters used.
 * background-color: #061435 dark blue 
 * Tile colour: #ed1d24 red
 * lettering colour: #fff white
+
+here is a link to the colour pallette ill be using.
+https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png
 
 
 ### Styling:
@@ -116,11 +119,13 @@ theme for the rest of the site.
 All the wireframes can be found here. for desktop tablet and mobile.
 https://github.com/fergusthompson/Worlds-most-amazing-memory-game/tree/master/wireframes
 
-## Features:
-* Timer
-* added time back to timer whenever 2 cards are matched in a modal popup
-* Flip Cards with matchinbg pictures
-* easy, medium and hard setting
+## Features developed:
+* click counter
+* Flip Cards with matching pictures
+
+## Features To be Developed
+* I would have liked to add a timer but didnt have time.
+* I would have liked to add difficulty settings but also didnt have the time.
 
 ## Technologies Used:
 
@@ -132,8 +137,15 @@ https://github.com/fergusthompson/Worlds-most-amazing-memory-game/tree/master/wi
 
 
 ### Tools and Libraries:
-* JQuery
 * GIT
 * Bootstrap
-* Font awesome
+* google fonts
 
+##Testing:
+
+The site is responsive over different screen sizes with custom layouts where appropriate. The site has been tested on Mozilla Firefox, Google Chrome and safari and works as intended.The site was tested on an android phone, Iphone, Ipad, laptop, and desktop. All site functions work as intended.
+
+The console displays no errors during site testing
+
+During planning for this project i knew that i needed to have good testing in place for during and after the projects build/completion, thanks to the layout being organised in the wireframes i was able to select what feature to work on, organise how i was going to approach  
+each section and follow my templates to check that it had been implemented correctly and works as expected. In future projects i would look to include more automated testing to help me with my tests.
