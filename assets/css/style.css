@@ -11,12 +11,12 @@ body{
 }
 
 #memory-game{
-    height: 80%;
-    width: 50%;
+    height:35%;
+    width:43%;
     margin: auto;
     perspective: 1000px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-top: 10px;
     }
 
@@ -56,8 +56,8 @@ body{
 
     
 img{
-    width:80%;
-    height: 70px;
+    width:85%;
+    height: 80%;
 }
 
 #click-counter{
@@ -71,7 +71,8 @@ img{
     width: 30%;
     border-radius: 5px;
     font-size: 26px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #fff;
 }
 
@@ -109,7 +110,7 @@ img{
     color: #fff;
     font-size: 70px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 @media(max-width: 1080px) {
