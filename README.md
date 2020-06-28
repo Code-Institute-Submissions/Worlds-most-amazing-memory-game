@@ -151,6 +151,14 @@ The console displays no errors during site testing
 
 During planning for this project i knew that i needed to have good testing in place for during and after the projects build/completion, thanks to the layout being organised in the wireframes i was able to select what feature to work on, organise how i was going to approach each section and follow my templates to check that it had been implemented correctly and works as expected. In future projects i would look to include more automated testing to help me with my tests.
 
+The following tests have been used to ensure proper site functionality:
+
+    
+* W3C HTML Validator: This validator checks the markup validity of Web documents in HTML. it returned a warning of no headers in the section elements but the javascript add all the html when the site loads so this is ok.
+* W3C CSS Validator: This validator checks the markup validity of Web documents in CSS. no errors were found.
+* JSHint: A static code analysis tool for JavaScript.  code works ok but it asks me to donwload (ES6) alot.
+
+
 ### Testing stories
 
 
