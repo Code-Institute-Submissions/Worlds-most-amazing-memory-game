@@ -156,7 +156,7 @@ During planning for this project i knew that i needed to have good testing in pl
 
 *I had a friend play the game, they enjoyed it and found it easy to understand. There was no issues duirng play.
 
-Overall:
+## Overall:
 
 ### Responsiveness -
 
@@ -171,3 +171,20 @@ Overall:
     Implementation : Adding these colours through css allowed me to easily re use them for the different elements on the page.
     Result : The colours chosen work well for the theme of the site.
     Verdict : This test has passed and the overall colour scheme fits well for the purpose of the site.
+
+
+## Features:
+
+### Click counter -
+
+    Plan : Durung planning i decided to add a click counter which was used as a countdown to wether or not a user won or lost the game. if all the cards where matched before the click counter went down they won. if not they lost.
+    Implementation : using javascript i was able to make a click counter that worked on every click the user made while playing the game.
+    Result : The click works effortlessly and cleanly. This is also fully responsive.
+    Verdict : This test passed as the click counter works on all devices.
+
+### flip cards with matching pictures -
+
+    Plan : the main aim of the game was to match cards that showed up when the user clicked on them and they would have to remember them to find the matching cards.
+    Implementation : i used javascript to make the cards flip when the user clicked on them by adding a class with another image called flip. i learned this from youtube.
+    Result : the cards flip over then the user clicks and they stay flipped over when two cards are matched.
+    Verdict : the cards stay matched and flip back if they dont on all devices with no issues.
