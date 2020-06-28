@@ -160,7 +160,11 @@ During planning for this project i knew that i needed to have good testing in pl
 
 ### Responsiveness -
 
-    Plan : I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
+Plan: I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
+    to use Bootstrap as this HTML Framework I'm most comfortable using. Testing using dev-tools throughout and also a final test of the 
+    entire site after completion.
+
+Plan : I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
     to use Bootstrap as this HTML Framework I'm most comfortable using. Testing using dev-tools throughout and also a final test of the 
     entire site after completion.
     Implementation : Throughout writing my HTML code making sure to use appropriate bootstrap class modifiers to provide correct 
