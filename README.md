@@ -208,3 +208,24 @@ Verdict : the cards stay matched and flip back if they dont on all devices with 
 * The gameRef.innerHTML variable was actually gamreRef.appendchild() but this didnt work and i couldnt work out why so after some research i changed it to the code you see now as gameRef.innerHTML() which did the trick.
 
 
+### known Bugs
+
+## Deployment: 
+
+Marvel memory game was developed on GitPod, using git and GitHub to host the repository.
+
+When deploying the marvel memory game I used GitHub, the following steps were made:
+
+* Opened up GitHub in the browser.
+* Signed in using username and password.
+* Selected my repositories.
+* Navigated to ' fergusthompson Worlds-most-amazing-memory-game '.
+* In the top navigation clicked 'settings'.
+* Scrolled down to the GitHub Pages area.
+* Selected 'Master Branch' from the 'Source' dropdown menu.
+* Clicked to confirm my selection.
+* Marvel memory game is now live on GitHub Pages.
+
+
+
+
