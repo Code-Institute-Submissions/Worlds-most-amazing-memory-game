@@ -93,6 +93,8 @@ co inside with the imagery of the marvel universe characters used on each of the
 memory game tiles. 
 
 ### Fonts:
+I chose to use the font Anton as it was the clsoest i could find to a comicbook style font as the actual marvel font is 
+copywritten. but i think it fits in well with the style.
 
 ### Colours:
 Using knowledge from prior research of the marvel comic books the colours will
@@ -105,16 +107,14 @@ the imagery of the marvel comic book characters used.
 
 
 ### Styling:
+I choose a comic book style font and used the colours from the marvel logo in the 
+theme for the rest of the site.
 
 
 ## Wireframes:
 
-I've used cacoo.com to do a mockup of the website design in black and white.
-First I started by doing a very basic wireframe design for desktop tablet and mobile
-just to get a better understanding of how all the elements were going to look 
-on the page.  There are mockups in the subfolder 'wireframes' and below is a link to the
-website i used to make them.
-https://cacoo.com/diagrams/vlU8XtYRdlYiqKoW/B4C8B.
+All the wireframes can be found here. for desktop tablet and mobile.
+https://github.com/fergusthompson/Worlds-most-amazing-memory-game/tree/master/wireframes
 
 ## Features:
 * Timer
