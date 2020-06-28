@@ -160,11 +160,8 @@ During planning for this project i knew that i needed to have good testing in pl
 
 ### Responsiveness -
 
-Plan: I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
-    to use Bootstrap as this HTML Framework I'm most comfortable using. Testing using dev-tools throughout and also a final test of the 
-    entire site after completion.
 
-Plan : I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
+    Plan : I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
     to use Bootstrap as this HTML Framework I'm most comfortable using. Testing using dev-tools throughout and also a final test of the 
     entire site after completion.
     Implementation : Throughout writing my HTML code making sure to use appropriate bootstrap class modifiers to provide correct 
@@ -173,9 +170,9 @@ Plan : I knew that this project needed to be FULLY responsive and mobile friendl
     Result : The Responsiveness of the site works as expected, no elements or content escape their boundaries or are hard to see on any device.
     Verdict : This test has passed and therefore the site is responsive.
 
-### Design -
-
-    Plan :The overall design of the site had to be bold and use exciting colours and imagery. Using vibrant colours like red, blue and white provide great contrast. 
+ ### Design -
+    Plan :The overall design of the site had to be bold and use exciting colours and imagery. 
+    Using vibrant colours like red, blue and white provide great contrast. 
     Implementation : Adding these colours through css allowed me to easily re use them for the different elements on the page.
     Result : The colours chosen work well for the theme of the site.
     Verdict : This test has passed and the overall colour scheme fits well for the purpose of the site.
@@ -185,8 +182,8 @@ Plan : I knew that this project needed to be FULLY responsive and mobile friendl
 
 ### Click counter -
 
-    Plan : Durung planning i decided to add a click counter which was used as a countdown to wether or not a user won or lost the game. if all the cards where matched before the click counter went down they won. if not they lost.
-    Implementation : using javascript i was able to make a click counter that worked on every click the user made while playing the game.
+ Plan : Durung planning i decided to add a click counter which was used as a countdown to wether or not a user won or lost the game. if all the cards where matched before the click counter went down they won. if not they lost.
+Implementation : using javascript i was able to make a click counter that worked on every click the user made while playing the game.
     Result : The click works effortlessly and cleanly. This is also fully responsive.
     Verdict : This test passed as the click counter works on all devices.
 
