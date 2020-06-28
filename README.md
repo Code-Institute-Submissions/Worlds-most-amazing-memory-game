@@ -154,7 +154,7 @@ During planning for this project i knew that i needed to have good testing in pl
 ### Testing stories
 
 
-*I had a friend play the game, they enjoyed it and found it easy to understand. There was no issues duirng play.
+* I had a friend play the game, they enjoyed it and found it easy to understand. There was no issues duirng play.
 
 ## Overall:
 
