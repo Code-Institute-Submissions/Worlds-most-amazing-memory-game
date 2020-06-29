@@ -76,19 +76,13 @@ img{
     border: 2px solid #fff;
 }
 
-.win-title{
+.outcometext{
     color: #fff;
     text-align: center;
     font-size: 150px;
 
 }
 
-.lose-title{
-    color: #fff;
-    text-align: center;
-    font-size: 150px;
-
-}
 
 #play-again{
     background-color: #ed1d24;

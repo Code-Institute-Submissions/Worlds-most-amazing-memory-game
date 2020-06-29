@@ -1,12 +1,13 @@
-
+const gameRef = document.querySelector('#card-row');
 
 let cardFlipped = false;
-let memoryCard1, memoryCard2;
+let firstClickedMemoryCard;
+let secondClickedMemoryCard;
 let stopUser = false;
 let winCondition = 0;
 let loseCondition = 40;
 
-const gameRef = document.querySelector('#card-row');
+
 
 const heroes = [ 
   {
@@ -36,8 +37,10 @@ const heroes = [
   
 ];
 
+const duplicateHeroes = heroes.concat(heroes);
 
-let duplicateHeroes = heroes.concat(heroes);
+
+
 
 
 
@@ -59,10 +62,10 @@ const shuffle = (shufflingHeroes) => {
   });
   
 };
-// Shuffle the cards
+// Shuffle the heroes
 shuffle(duplicateHeroes);
 
-// Write HTMLwith shuffles cards
+// Write HTML with shuffled heroes
 createHtmlForGame(duplicateHeroes);
 
 
@@ -74,30 +77,30 @@ function flipCard(){
     loseCondition -= 1;
     document.querySelector('#click-counter').innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
      if (loseCondition === 0){
-        showLoseScreen();
+        showOutcomeScreen(false);
         return;
     }
     if (stopUser) return; // stops cards being flipped whilst flipped cards are being checked
-    if (this === memoryCard1) return; // when a card has been flipped this code wont run
+    if (this === firstClickedMemoryCard) return; // when a card has been flipped this code wont run
     this.classList.add('flip');
     if(!cardFlipped) {
     // first click
     cardFlipped = true;
-    memoryCard1 = this;
+    firstClickedMemoryCard = this;
 
     return;
     }
     // second click
-      memoryCard2 = this;
+      secondClickedMemoryCard = this;
     checkCardsMatch();  
 
     
   }
 
 
-function checkCardsMatch() {
+const checkCardsMatch = () => {
 //check to see if cards match?
-       let cardsMatch = memoryCard1.dataset.framework === memoryCard2.dataset.framework;
+       let cardsMatch = firstClickedMemoryCard.dataset.framework === secondClickedMemoryCard.dataset.framework;
 
        cardsMatch ? disableCardFlip() : removeFlipClass();
 
@@ -105,56 +108,53 @@ function checkCardsMatch() {
 
 // stops user interacting with matched cards card 
 
-function disableCardFlip(){
-       memoryCard1.removeEventListener('click', flipCard);
-       memoryCard2.removeEventListener('click', flipCard);
+const disableCardFlip = () => {
+       firstClickedMemoryCard.removeEventListener('click', flipCard);
+       secondClickedMemoryCard.removeEventListener('click', flipCard);
        winCondition +=1;
        if (winCondition === 8){
-        showWinScreen();
+        showOutcomeScreen(true);
         return;
     }
        resetGame();
 }
 
-function removeFlipClass(){
+const removeFlipClass = () =>{
 
     stopUser = true;
           setTimeout(() =>{
-          memoryCard1.classList.remove('flip');
-          memoryCard2.classList.remove('flip');
+          firstClickedMemoryCard.classList.remove('flip');
+          secondClickedMemoryCard.classList.remove('flip');
 
           resetGame();
 
       }, 1500);
 }
 
-function resetGame(){
+const resetGame = () =>{
     [cardFlipped, stopUser] = [false, false];
-    [memoryCard1, memoryCard2] = [null,null];
+    [firstClickedMemoryCard, secondClickedMemoryCard] = [null,null];
 }
 
   
 
-function playAgain(){
+const playAgain = () => {
       location.reload();
 }
 
-function showWinScreen(){
-    document.querySelector('#memory-game').innerHTML=`
-    <div class="losescreen">
-     <h2 class="win-title">You Win!</h2>
+
+const showOutcomeScreen = (winorlose) => {
+let outcomeText;
+winorlose ? (outcomeText = `You Win`) : (outcomeText = `You Lose!`)
+
+document.querySelector('#memory-game').innerHTML=`
+    <div class="outcomeScreen">
+     <h2 class="outcometext">${outcomeText}</h2>
       <button id="play-again">Play Again</button>
     </div>`;
     document.getElementById("play-again").addEventListener("click", playAgain);
 }
 
-function showLoseScreen(){
-    document.querySelector('#memory-game').innerHTML=`
-    <div class="winscreen">
-     <h2 class="lose-title">You Lose!</h2>
-      <button id="play-again">Play Again</button>
-    </div>`;
-    document.getElementById("play-again").addEventListener("click", playAgain);
-}
+
 
 memoryCards.forEach(card => card.addEventListener('click', flipCard));
