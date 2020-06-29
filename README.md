@@ -157,7 +157,7 @@ The following tests have been used to ensure proper site functionality:
 * W3C HTML Validator: This validator checks the markup validity of Web documents in HTML. it returned a warning of no headers in the section elements but the javascript add all the html when the site loads so this is ok.
 * W3C CSS Validator: This validator checks the markup validity of Web documents in CSS. no errors were found.
 * JSHint: A static code analysis tool for JavaScript.  code works ok but it asks me to donwload (ES6) alot.
-
+* autoprefixer css online: checked the css so it works on safri and other such platforms.
 
 ### Testing stories
 
@@ -214,7 +214,7 @@ Using vibrant colours like red, blue and white provide great contrast.
 * i tried making a shuffle function but kept failing because i wasnt using a capital M for the math.random. i had a friend look at it and he pointed it out for me.
 * The shuffle function then didnt work once i added the html function at the top so i had to add a new way of shuffling the cards which did it before they were written into the html.  it didnt work for a long time as i had the wrong spelling in the function after a lot of inspection i found the problem.
 * The gameRef.innerHTML variable was actually gamreRef.appendchild() but this didnt work and i couldnt work out why so after some research i changed it to the code you see now as gameRef.innerHTML() which did the trick.
-
+* game wasnt working on iphone so passed the css through an autoprefixer and it fixed the issues.
 
 ### known Bugs
 
