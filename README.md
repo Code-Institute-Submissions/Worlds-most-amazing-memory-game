@@ -218,7 +218,7 @@ Using vibrant colours like red, blue and white provide great contrast.
 
 ### known Bugs
 
-* the image sizing when the card is flipped is wrong. ive tried all sorts of things to change it like changinf from px to % then i tried to re size the images using photoshop and re load them back in but that didnt work either.  I think the issue is coming from the way im flipping the cards using the css.
+* the image sizing when the card is flipped is wrong. ive tried all sorts of things to change it like changing from px to % then i tried to re size the images using photoshop and re load them back in but that didnt work either.  I think the issue is coming from the way im flipping the cards using the css.
 
 ## Deployment: 
 
