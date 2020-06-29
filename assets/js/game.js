@@ -57,7 +57,7 @@ const shuffle = (shufflingHeroes) => {
 
 
         gameRef.innerHTML +=  ` 
-        <div class="memory-card col-3 col-md-3 col-lg-3 my-1" data-framework="${hero.name}">
+        <div class="memory-card col-3 my-1" data-framework="${hero.name}">
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`;
