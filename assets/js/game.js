@@ -1,6 +1,6 @@
 const gameRef = document.querySelector('#card-row');
 const clickcountRef = document.querySelector('#click-counter');
-const outcomeScreen = document.querySelector('#memory-game');
+const outcomeScreenRef = document.querySelector('#memory-game');
 
 
 let cardFlipped = false;
