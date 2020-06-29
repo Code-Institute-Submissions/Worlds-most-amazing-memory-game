@@ -18,7 +18,7 @@ body{
     margin: auto;
     -webkit-perspective: 1000px;
             perspective: 1000px;
-    text-align: center;
+    
     margin-top: 20px;
     padding-top: 10px;
     }
@@ -36,6 +36,11 @@ body{
     transition: transform .5s, -webkit-transform .5s;
     
 
+}
+
+.row{
+    margin-left:0;
+    margin-right:0;
 }
 
 .memory-card:active{
@@ -76,8 +81,9 @@ body{
 
     
 img{
-    width:85%;
+    width:90%;
     height: 80%;
+    vertical-align: none;
 }
 
 #click-counter{
@@ -103,6 +109,10 @@ img{
 
 }
 
+.outcomeScreen{
+    text-align: center;
+}
+
 
 #play-again{
     background-color: #ed1d24;
@@ -110,6 +120,7 @@ img{
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
+    text-align: center;
 }
 
 #play-again:hover{

@@ -2,7 +2,6 @@ const gameRef = document.querySelector('#card-row');
 const clickcountRef = document.querySelector('#click-counter');
 const outcomeScreenRef = document.querySelector('#memory-game');
 
-
 let cardFlipped = false;
 let firstClickedMemoryCard;
 let secondClickedMemoryCard;
@@ -58,7 +57,7 @@ const shuffle = (shufflingHeroes) => {
 
 
         gameRef.innerHTML +=  ` 
-        <div class="memory-card col-4 col-md-3 col-lg-3 my-1" data-framework="${hero.name}">
+        <div class="memory-card col-3 col-md-3 col-lg-3 my-1" data-framework="${hero.name}">
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`;
@@ -109,7 +108,9 @@ const checkCardsMatch = () => {
 
     }
 
-// stops user interacting with matched cards card 
+/** 
+ * stops user interacting with matched cards card 
+ * */ 
 
 const disableCardFlip = () => {
        firstClickedMemoryCard.removeEventListener('click', flipCard);
@@ -153,8 +154,8 @@ winorlose ? (outcomeText = `You Win`) : (outcomeText = `You Lose!`)
 outcomeScreenRef.innerHTML=`
     <div class="outcomeScreen">
      <h2 class="outcometext">${outcomeText}</h2>
-      <button id="play-again">Play Again</button>
-    </div>`;
+       <button id="play-again">Play Again</button>
+     </div>`;
     document.getElementById("play-again").addEventListener("click", playAgain);
 }
 
