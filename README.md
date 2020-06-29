@@ -157,7 +157,7 @@ The following tests have been used to ensure proper site functionality:
 * W3C HTML Validator: This validator checks the markup validity of Web documents in HTML. it returned a warning of no headers in the section elements but the javascript add all the html when the site loads so this is ok.
 * W3C CSS Validator: This validator checks the markup validity of Web documents in CSS. no errors were found.
 * JSHint: A static code analysis tool for JavaScript.  code works ok but it asks me to donwload (ES6) alot.
-* autoprefixer css online: checked the css so it works on safri and other such platforms.
+* autoprefixer css online: checked the css so it works on safari and other platforms.
 
 ### Testing stories
 
@@ -217,6 +217,8 @@ Using vibrant colours like red, blue and white provide great contrast.
 * game wasnt working on iphone so passed the css through an autoprefixer and it fixed the issues.
 
 ### known Bugs
+
+* the image sizing when the card is flipped is wrong. ive tried all sorts of things to change it like changinf from px to % then i tried to re size the images using photoshop and re load them back in but that didnt work either.  I think the issue is coming from the way im flipping the cards using the css.
 
 ## Deployment: 
 
