@@ -220,7 +220,7 @@ Using vibrant colours like red, blue and white provide great contrast.
 
 * the image sizing when the card is flipped is wrong. ive tried all sorts of things to change it like changing from px to % then i tried to re size the images using photoshop and re load them back in but that didnt work either.  I think the issue is coming from the way im flipping the cards using the css.
 * the cards are not exactly central on ipad but they look ok, theyre slightly off but it affects the iamges once margin or padding is alterered.
-
+* if you click too quickly on the cards before they turn back over when its checking for a match then the click counter goes down.
 
 ## Deployment: 
 
