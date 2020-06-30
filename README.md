@@ -239,5 +239,20 @@ When deploying the marvel memory game I used GitHub, the following steps were ma
 * Marvel memory game is now live on GitHub Pages.
 
 
+## Closing Notes:
+
+Developing this project has taught me alot about how to provide users needs based on their interaction, working with new concepts has pushed my knowledge further and has helped me better understand how to manipulate this type of code. In the future I would like to implement other features like difficulty settings and a timer. This was my first timeusing javascript and therefore was a challenge to get to grips, however thanks to helpful documentation, and a few hints here and there from tutors/mentor I was able to achieve a solution in-line with the user requirements.
+
+## Credits: 
+
+* bootstrap - for image setup
+* youtube - tips on making the card flipping functions (vanilla javascript tutorial)
+* google - all phohos used were found on google. also font was from google
+* Coolors.co - I made my colour pallette on their site
+* cacoo.com - I made my wireframes on their site an imported them
+* W3C HTML Validator
+* W3C CSS Validator
+* JSHint
+* autoprefixer css online
 
 
