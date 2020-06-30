@@ -127,7 +127,7 @@ https://github.com/fergusthompson/Worlds-most-amazing-memory-game/tree/master/wi
 * I would have liked to add a timer but didnt have time.
 * I would have liked to add difficulty settings but also didnt have the time.
 
-These features were on my wireframes but where then left out as development went on.
+These features were on my wireframes but where then left out as development went on. I chose to put the click counter where the timer would have been to keep in line with the same kind of layout.
 
 ## Technologies Used:
 
