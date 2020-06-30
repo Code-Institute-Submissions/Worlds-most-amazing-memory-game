@@ -169,7 +169,7 @@ const playAgain = () => {
  */
 const showOutcomeScreen = (winorlose) => {
 let outcomeText;
-winorlose ? (outcomeText = `You Win`) : (outcomeText = `You Lose!`)
+winorlose ? (outcomeText = `You Win!`) : (outcomeText = `You Lose!`)
 
 outcomeScreenRef.innerHTML=`
     <div class="outcomeScreen">
