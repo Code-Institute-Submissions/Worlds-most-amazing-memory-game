@@ -45,12 +45,18 @@ const duplicateHeroes = heroes.concat(heroes);
 
 
 
-
+/**
+ * 
+ * @param {} shufflingHeroes shuffles the heroes before theyre written to html
+ */
 const shuffle = (shufflingHeroes) => {
   shufflingHeroes.sort(() => Math.random() - 0.5);
 };
 
-
+/**
+ * 
+ * @param {} heroCards takes the shuffled cards and writes them to html
+ */
   const createHtmlForGame = (heroCards) => {
     heroCards.forEach((hero) => {
     // Create HTML
@@ -70,48 +76,53 @@ shuffle(duplicateHeroes);
 // Write HTML with shuffled heroes
 createHtmlForGame(duplicateHeroes);
 
-
+/**
+ * adss the click counter when the game loads
+ */
   const memoryCards = document.querySelectorAll('.memory-card');
   clickcountRef.innerHTML ="<div class='lose-counter'>"+loseCondition+"  Clicks Left!</div>";
 
-function flipCard(){
-//flips the cards over
+
+
+  /**
+ * adds the flip class and then runs check for match
+ */
+ function flipCard(){
     loseCondition -= 1;
-    document.querySelector('#click-counter').innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
+    clickcountRef.innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
      if (loseCondition === 0){
         showOutcomeScreen(false);
         return;
     }
-    if (stopUser) return; // stops cards being flipped whilst flipped cards are being checked
-    if (this === firstClickedMemoryCard) return; // when a card has been flipped this code wont run
+    if (stopUser) return; 
+    if (this === firstClickedMemoryCard) return; 
     this.classList.add('flip');
     if(!cardFlipped) {
-    // first click
     cardFlipped = true;
     firstClickedMemoryCard = this;
-
-    return;
+        return;
     }
-    // second click
       secondClickedMemoryCard = this;
     checkCardsMatch();  
 
     
   }
 
-
+/**
+ * checks that cards match
+ */
 const checkCardsMatch = () => {
-//check to see if cards match?
+
        let cardsMatch = firstClickedMemoryCard.dataset.framework === secondClickedMemoryCard.dataset.framework;
 
        cardsMatch ? disableCardFlip() : removeFlipClass();
 
     }
 
-/** 
+
+    /** 
  * stops user interacting with matched cards card 
  * */ 
-
 const disableCardFlip = () => {
        firstClickedMemoryCard.removeEventListener('click', flipCard);
        secondClickedMemoryCard.removeEventListener('click', flipCard);
@@ -122,7 +133,9 @@ const disableCardFlip = () => {
     }
        resetGame();
 }
-
+/**
+ * if the cards dont match they turn back over
+ */
 const removeFlipClass = () =>{
 
     stopUser = true;
@@ -134,19 +147,26 @@ const removeFlipClass = () =>{
 
       }, 1500);
 }
-
+/** 
+ * stops a bug when the user tries to clcik the same first card twice
+ */
 const resetGame = () =>{
     [cardFlipped, stopUser] = [false, false];
     [firstClickedMemoryCard, secondClickedMemoryCard] = [null,null];
 }
 
   
-
+/**
+ * restets the game 
+ */
 const playAgain = () => {
       location.reload();
 }
 
-
+/**
+ * shows the win or lose screen 
+ * @param {*} winorlose 
+ */
 const showOutcomeScreen = (winorlose) => {
 let outcomeText;
 winorlose ? (outcomeText = `You Win`) : (outcomeText = `You Lose!`)
