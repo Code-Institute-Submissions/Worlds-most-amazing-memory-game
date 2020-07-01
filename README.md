@@ -161,7 +161,9 @@ The following tests have been used to ensure proper site functionality:
 
 ### Testing stories
 
-
+Firstly I put up my project on the peer review slack channel. After a few days i only got one review but it was as follows.
+* "one thing i will note is when i played i got all pairs with the last click but classed this as a fail!i'd consider a favicon as it's throwing an error to the console.remember to add a little annotation to your css but in general nice project build. The images are a little stretched i would consider just updating the images to the correct ratio, just a nitpick!"
+once i received this i went back to my project and fixed the clicking bug as explained in my bugs section as well as the images being slightly stretched thats also explained in the bugs section. Annottation was added to the css.
 * I had a friend play the game, they enjoyed it and found it easy to understand. There was no issues duirng play.
 
 ## Overall:
