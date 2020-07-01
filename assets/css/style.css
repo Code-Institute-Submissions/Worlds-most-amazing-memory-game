@@ -1,17 +1,17 @@
 
 
-
+/*----chosen font family--------*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
 
-
+/*----styling for main page--------*/
 body{
     height: 100vh;
     background: #061435;
     font-family: 'Anton', sans-serif;
 }
-
+/*----main game container styling--------*/
 #memory-game{
     height:35%;
     width:43%;
@@ -22,7 +22,14 @@ body{
     margin-top: 20px;
     padding-top: 10px;
     }
-
+/*----game screen title styling--------*/
+    .game-title{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*----individual card container styling--------*/
 .memory-card{
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -37,12 +44,13 @@ body{
     
 
 }
-
+/*----removed some of bootstraps built in styles--------*/
 .row{
     margin-left:0;
     margin-right:0;
 }
 
+/*----styling when the card is clicked on--------*/
 .memory-card:active{
     -webkit-transform: scale(.97);
         -ms-transform: scale(.97);
@@ -53,14 +61,14 @@ body{
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
 }
-
+/*----css class added for card flip--------*/
 .memory-card.flip{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     
 }
 
-
+/*----marvel image and hero images--------*/
 .back-face{
     position: absolute;
     -webkit-backface-visibility: hidden;
@@ -86,10 +94,11 @@ img{
     vertical-align: none;
 }
 
+/*----lose counter container --------*/
 #click-counter{
     text-align: center;
 }
-
+/*----lose counter countdown box--------*/
 .lose-counter{
     color: #fff;
     background-color: #ed1d24;
@@ -101,7 +110,7 @@ img{
     margin-right: auto;
     border: 2px solid #fff;
 }
-
+/*----text that show up when the outcome of the game is shown--------*/
 .outcometext{
     color: #fff;
     text-align: center;
@@ -113,7 +122,7 @@ img{
     text-align: center;
 }
 
-
+/*----button styling for the game reset button-------*/
 #play-again{
     background-color: #ed1d24;
     height: 45px;
@@ -131,12 +140,15 @@ img{
     color:#ed1d24;
 }
 
+
 .game-title{
     color: #fff;
     font-size: 70px;
     text-align: center;
     margin-bottom: 20px;
 }
+
+/*----media queries for responsive styling--------*/
 
 @media(max-width: 1080px) {
     #memory-game {

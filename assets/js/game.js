@@ -2,12 +2,14 @@ const gameRef = document.querySelector('#card-row');
 const clickcountRef = document.querySelector('#click-counter');
 const outcomeScreenRef = document.querySelector('#memory-game');
 
+
 let cardFlipped = false;
 let firstClickedMemoryCard;
 let secondClickedMemoryCard;
 let stopUser = false;
 let winCondition = 0;
 let loseCondition = 40;
+
 
 
 
@@ -82,9 +84,7 @@ createHtmlForGame(duplicateHeroes);
   const memoryCards = document.querySelectorAll('.memory-card');
   clickcountRef.innerHTML ="<div class='lose-counter'>"+loseCondition+"  Clicks Left!</div>";
 
-
-
-  /**
+ /**
  * adds the flip class and then runs check for match
  */
  function flipCard(){
@@ -133,6 +133,7 @@ const disableCardFlip = () => {
     }
        resetGame();
 }
+
 /**
  * if the cards dont match they turn back over
  */
@@ -164,8 +165,7 @@ const playAgain = () => {
 }
 
 /**
- * shows the win or lose screen 
- * @param {*} winorlose 
+ * @param {*} winorlose shows the win or lose screen 
  */
 const showOutcomeScreen = (winorlose) => {
 let outcomeText;
@@ -176,7 +176,7 @@ outcomeScreenRef.innerHTML=`
      <h2 class="outcometext">${outcomeText}</h2>
        <button id="play-again">Play Again</button>
      </div>`;
-    document.getElementById("play-again").addEventListener("click", playAgain);
+    document.getElementById('play-again').addEventListener("click", playAgain);
 }
 
 
