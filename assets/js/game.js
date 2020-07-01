@@ -89,6 +89,10 @@ createHtmlForGame(duplicateHeroes);
  */
  function flipCard(){
     loseCondition -= 1;
+    if (loseCondition < 0) {
+        showOutcomeScreen(false);
+        return;
+     }
     clickcountRef.innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
     
     if (stopUser) return; 
@@ -123,7 +127,7 @@ const checkCardsMatch = () => {
         showOutcomeScreen(true);
         return;
      }
-        if (loseCondition === 0 && winCondition !== 8) {
+        if (loseCondition === 0 && winCondition != 8) {
         showOutcomeScreen(false);
         return;
      }
