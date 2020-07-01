@@ -89,10 +89,7 @@ createHtmlForGame(duplicateHeroes);
  */
  function flipCard(){
     loseCondition -= 1;
-    if (loseCondition < 0) {
-        showOutcomeScreen(false);
-        return;
-     }
+    checkCondition();
     clickcountRef.innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
     
     if (stopUser) return; 
@@ -105,7 +102,6 @@ createHtmlForGame(duplicateHeroes);
     }
       secondClickedMemoryCard = this;
     checkCardsMatch();  
-    checkCondition();
     
   }
 
@@ -126,12 +122,12 @@ const checkCardsMatch = () => {
         if (winCondition === 8){
         showOutcomeScreen(true);
         return;
-     }
-        if (loseCondition === 0 && winCondition != 8) {
-        showOutcomeScreen(false);
-        return;
-     }
+      }
+       if (loseCondition === 0 && winCondition != 8)
+       showOutcomeScreen(false);
+       return;
     }
+    
 
 
     /** 
@@ -141,7 +137,7 @@ const disableCardFlip = () => {
        firstClickedMemoryCard.removeEventListener('click', flipCard);
        secondClickedMemoryCard.removeEventListener('click', flipCard);
        winCondition +=1;
-        
+    checkCondition();
     
        resetGame();
 }
