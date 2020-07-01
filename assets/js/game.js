@@ -115,17 +115,18 @@ const checkCardsMatch = () => {
        cardsMatch ? disableCardFlip() : removeFlipClass();
 
     }
-
+    /**
+     * checks to make sure you dont lose if you get the final pair on your final click
+     */
     const checkCondition = () =>{
-
         if (winCondition === 8){
         showOutcomeScreen(true);
         return;
-    }
+     }
         if (loseCondition === 0 && winCondition !== 8) {
         showOutcomeScreen(false);
         return;
-    }
+     }
     }
 
 
