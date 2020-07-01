@@ -215,6 +215,7 @@ Using vibrant colours like red, blue and white provide great contrast.
 * The shuffle function then didnt work once i added the html function at the top so i had to add a new way of shuffling the cards which did it before they were written into the html.  it didnt work for a long time as i had the wrong spelling in the function after a lot of inspection i found the problem.
 * The gameRef.innerHTML variable was actually gamreRef.appendchild() but this didnt work and i couldnt work out why so after some research i changed it to the code you see now as gameRef.innerHTML() which did the trick.
 * game wasnt working on iphone so passed the css through an autoprefixer and it fixed the issues.
+* If you were on your final click and you won the game by getting the last pair on your last click the lose screen was coming up.  i built a new function which the took the win and lose condititons in the same function instead of 2 different ones and it esemed to do the trick.
 
 ### known Bugs
 
