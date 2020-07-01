@@ -131,6 +131,8 @@ const disableCardFlip = () => {
         showOutcomeScreen(true);
         return;
     }
+
+    
        resetGame();
 }
 
