@@ -90,10 +90,7 @@ createHtmlForGame(duplicateHeroes);
  function flipCard(){
     loseCondition -= 1;
     clickcountRef.innerHTML ='<div class="lose-counter">'+loseCondition+'  Clicks Left!</div>';
-     if (loseCondition === 0){
-        showOutcomeScreen(false);
-        return;
-    }
+    
     if (stopUser) return; 
     if (this === firstClickedMemoryCard) return; 
     this.classList.add('flip');
@@ -104,7 +101,7 @@ createHtmlForGame(duplicateHeroes);
     }
       secondClickedMemoryCard = this;
     checkCardsMatch();  
-
+    checkCondition();
     
   }
 
@@ -119,6 +116,18 @@ const checkCardsMatch = () => {
 
     }
 
+    const checkCondition = () =>{
+
+        if (winCondition === 8){
+        showOutcomeScreen(true);
+        return;
+    }
+        if (loseCondition === 0 && winCondition !== 8) {
+        showOutcomeScreen(false);
+        return;
+    }
+    }
+
 
     /** 
  * stops user interacting with matched cards card 
@@ -127,11 +136,7 @@ const disableCardFlip = () => {
        firstClickedMemoryCard.removeEventListener('click', flipCard);
        secondClickedMemoryCard.removeEventListener('click', flipCard);
        winCondition +=1;
-       if (winCondition === 8){
-        showOutcomeScreen(true);
-        return;
-    }
-
+        
     
        resetGame();
 }
@@ -172,6 +177,7 @@ const playAgain = () => {
 const showOutcomeScreen = (winorlose) => {
 let outcomeText;
 winorlose ? (outcomeText = `You Win!`) : (outcomeText = `You Lose!`)
+
 
 outcomeScreenRef.innerHTML=`
     <div class="outcomeScreen">
