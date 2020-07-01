@@ -81,12 +81,13 @@ createHtmlForGame(duplicateHeroes);
 /**
  * adss the click counter when the game loads
  */
-  const memoryCards = document.querySelectorAll('.memory-card');
-  clickcountRef.innerHTML ="<div class='lose-counter'>"+loseCondition+"  Clicks Left!</div>";
+  clickcountRef.innerHTML ="<div class='lose-counter'>40 Clicks Left!</div>";
 
  /**
  * adds the flip class and then runs check for match
  */
+ const memoryCards = document.querySelectorAll('.memory-card');
+
  function flipCard(){
     loseCondition -= 1;
     checkCondition();
