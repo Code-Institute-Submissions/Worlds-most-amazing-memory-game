@@ -285,7 +285,7 @@ When deploying the marvel memory game I used GitHub, the following steps were ma
 
 ## Running memory game Locally
 
-## Cloning memory game from GitHub:
+<strong>Cloning memory game from GitHub</strong>:
 
 * Navigate to '<strong>fergusthompson/Worlds-most-amazing-memory-game</strong>'.
 * Click the green '<strong>Clone or Download</strong>' button.
