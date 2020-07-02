@@ -1,7 +1,6 @@
 const gameRef = document.querySelector('#card-row');
 const clickcountRef = document.querySelector('#click-counter');
 const outcomeScreenRef = document.querySelector('#memory-game');
-
 let cardFlipped = false;
 let firstClickedMemoryCard;
 let secondClickedMemoryCard;
@@ -63,7 +62,7 @@ shuffle(duplicateHeroes);
 
 createHtmlForGame(duplicateHeroes);
 
-const memoryCards = document.querySelectorAll('.memory-card');
+var memoryCards = document.querySelectorAll('.memory-card');
 memoryCards.forEach(card => card.addEventListener('click', flipCard));
 
 clickcountRef.innerHTML = "<div class='lose-counter'>40 Clicks Left!</div>";
