@@ -44,9 +44,6 @@ const heroes = [
 const duplicateHeroes = heroes.concat(heroes);
 
 
-
-
-
 /**
  * 
  * @param {} shufflingHeroes shuffles the heroes before theyre written to html
@@ -158,7 +155,7 @@ const removeFlipClass = () =>{
       }, 1500);
 }
 /** 
- * stops a bug when the user tries to clcik the same first card twice
+ * stops a bug when the user tries to click the same first card twice
  */
 const resetGame = () =>{
     [cardFlipped, stopUser] = [false, false];
@@ -167,7 +164,7 @@ const resetGame = () =>{
 
   
 /**
- * restets the game 
+ * resets the game 
  */
 const playAgain = () => {
       location.reload();

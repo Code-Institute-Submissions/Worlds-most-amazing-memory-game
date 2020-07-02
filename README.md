@@ -276,4 +276,6 @@ Developing this project has taught me alot about how to provide users needs base
 * JSHint
 * autoprefixer css online
 
+And a special thanks to my mentor Simon for all his help. www.github.com/Eventyret
+
 
