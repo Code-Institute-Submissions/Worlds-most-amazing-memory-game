@@ -55,15 +55,14 @@ const createHtmlForGame = (heroCards) => {
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`;
-  });
+    });
+  var memoryCards = document.querySelectorAll('.memory-card');
+  memoryCards.forEach(card => card.addEventListener('click', flipCard));
 };
 
 shuffle(duplicateHeroes);
 
 createHtmlForGame(duplicateHeroes);
-
-var memoryCards = document.querySelectorAll('.memory-card');
-memoryCards.forEach(card => card.addEventListener('click', flipCard));
 
 clickcountRef.innerHTML = "<div class='lose-counter'>40 Clicks Left!</div>";
 
