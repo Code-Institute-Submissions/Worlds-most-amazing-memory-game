@@ -25,9 +25,13 @@ body{
 /*----game screen title styling--------*/
     .game-title{
     color: #fff;
-    font-size: 70px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+h1{ 
+    font-size: 70px;
+    margin-top: 15px;
 }
 /*----individual card container styling--------*/
 .memory-card{
@@ -114,7 +118,7 @@ img{
 .outcometext{
     color: #fff;
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
 
 }
 
@@ -130,6 +134,7 @@ img{
     border-radius: 5px;
     color: #fff;
     text-align: center;
+    font-family: 'Anton', sans-serif;
 }
 
 #play-again:hover{
@@ -138,6 +143,7 @@ img{
     border: 2px solid #ed1d24;
     border-radius: 5px;
     color:#ed1d24;
+    font-family: 'Anton', sans-serif;
 }
 
 
@@ -155,9 +161,16 @@ img{
 }
 
 @media(max-width: 1080px) {
-    .game-title {
-        font-size: 40px;
+    h1 {
+        font-size: 35px;
         padding-top: 10px;
+
+    }
+}
+
+@media(max-width: 1080px) {
+    #click-counter {
+     text-align: center;
 
     }
 }
@@ -168,3 +181,12 @@ img{
 
     }
 }
+@media(max-width: 1080px) {
+    .outcometext{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+
+}
+}
+
