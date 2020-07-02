@@ -56,7 +56,9 @@ const createHtmlForGame = (heroCards) => {
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`;
     });
+
   var memoryCards = document.querySelectorAll('.memory-card');
+  
   memoryCards.forEach(card => card.addEventListener('click', flipCard));
 };
 
