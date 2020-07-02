@@ -90,7 +90,7 @@ something that doesnt take a long time to learn once i start playing."
 ### Site Owner Goals:
 
 * Offer a fun game for people to play
-*  Make an appealing looking site for players.
+* Make an appealing looking site for players.
 * Keep it simple and addictive.
 
 
@@ -128,7 +128,7 @@ the imagery of the marvel comic book characters used.
 * Tile colour: #ed1d24 red
 * lettering colour: #fff white
 
-<a href="https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png">here</a>is a link to the colour pallette ill be using.
+<a href="https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png">here</a> is a link to the colour pallette ill be using.
 
 
 
@@ -162,9 +162,10 @@ These features were on my wireframes but where then left out as development went
 
 
 ### Tools and Libraries:
-* GIT
-* Bootstrap
-* google fonts
+* <a href="https://github.com/">GIT</a>
+* <a href="https://getbootstrap.com/">Bootstrap</a> 
+* <a href="https://fonts.google.com/">google fonts</a>
+* <a href="https://jquery.com/">jquery</a>
 
 ## Testing:
 
@@ -177,10 +178,10 @@ During planning for this project i knew that i needed to have good testing in pl
 The following tests have been used to ensure proper site functionality:
 
     
-* W3C HTML Validator: This validator checks the markup validity of Web documents in HTML. it returned a warning of no headers in the section elements but the javascript add all the html when the site loads so this is ok.
-* W3C CSS Validator: This validator checks the markup validity of Web documents in CSS. no errors were found.
-* JSHint: A static code analysis tool for JavaScript.  code works ok but it asks me to donwload (ES6) alot.
-* autoprefixer css online: checked the css so it works on safari and other platforms.
+* <strong>W3C HTML Validator</strong>: This validator checks the markup validity of Web documents in HTML. it returned a warning of no headers in the section elements but the javascript add all the html when the site loads so this is ok.
+* <strong>W3C CSS Validator</strong>: This validator checks the markup validity of Web documents in CSS. no errors were found.
+* <strong>JSHint</strong>: A static code analysis tool for JavaScript.  code works ok but it asks me to donwload (ES6) alot.
+* <strong>autoprefixer css online</strong>: checked the css so it works on safari and other platforms.
 
 ### Testing stories
 
@@ -212,38 +213,38 @@ once i received this i went back to my project and fixed the clicking bug as exp
 ### Responsiveness -
 
 
-* Plan : I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
+* <strong>Plan</strong>  : I knew that this project needed to be FULLY responsive and mobile friendly therefore the obvious option 
 to use Bootstrap as this HTML Framework I'm most comfortable using. Testing using dev-tools throughout and also a final test of the 
 entire site after completion.
-* Implementation : Throughout writing my HTML code making sure to use appropriate bootstrap class modifiers to provide correct 
+* <strong>Implementation </strong>: Throughout writing my HTML code making sure to use appropriate bootstrap class modifiers to provide correct 
 breakpoints for the content. Testing breakpoints was relatively simple thanks to the easy to use Bootstrap, i only really modified a 
 few breakpoints after writing the majority of my HTML.
-* Result : The Responsiveness of the site works as expected, no elements or content escape their boundaries or are hard to see on any device.
-* Verdict : This test has passed and therefore the site is responsive.
+* <strong>Result</strong> : The Responsiveness of the site works as expected, no elements or content escape their boundaries or are hard to see on any device.
+* <strong>Verdict </strong>: This test has passed and therefore the site is responsive.
 
  ### Design -
-* Plan :The overall design of the site had to be bold and use exciting colours and imagery. 
+* <strong>Plan</strong> :The overall design of the site had to be bold and use exciting colours and imagery. 
 Using vibrant colours like red, blue and white provide great contrast. 
-* Implementation : Adding these colours through css allowed me to easily re use them for the different elements on the page.
-* Result : The colours chosen work well for the theme of the site.
-* Verdict : This test has passed and the overall colour scheme fits well for the purpose of the site.
+* <strong>Implementation</strong> : Adding these colours through css allowed me to easily re use them for the different elements on the page.
+* <strong>Result</strong> : The colours chosen work well for the theme of the site.
+* <strong>Verdict </strong> : This test has passed and the overall colour scheme fits well for the purpose of the site.
 
 
 ## Features:
 
 ### Click counter -
 
-* Plan : During planning i decided to add a click counter which was used as a countdown to wether or not a user won or lost the game. if all the cards where matched before the click counter went down they won. if not they lost.
-* Implementation : using javascript i was able to make a click counter that worked on every click the user made while playing the game.
-* Result : The click works effortlessly and cleanly. This is also fully responsive.
-* Verdict : This test passed as the click counter works on all devices.
+* <strong>Plan</strong> : During planning i decided to add a click counter which was used as a countdown to wether or not a user won or lost the game. if all the cards where matched before the click counter went down they won. if not they lost.
+* <strong>Implementation</strong> : using javascript i was able to make a click counter that worked on every click the user made while playing the game.
+* <strong>Result</strong> : The click works effortlessly and cleanly. This is also fully responsive.
+* <strong>Verdict </strong> : This test passed as the click counter works on all devices.
 
 ### flip cards with matching pictures -
 
-* Plan : the main aim of the game was to match cards that showed up when the user clicked on them and they would have to remember them to find the matching cards.
-* Implementation : i used javascript to make the cards flip when the user clicked on them by adding a class with another image called flip. i learned this from youtube.
-* Result : the cards flip over then the user clicks and they stay flipped over when two cards are matched.
-* Verdict : the cards stay matched and flip back if they dont on all devices with no issues.
+* <strong>Plan</strong> : the main aim of the game was to match cards that showed up when the user clicked on them and they would have to remember them to find the matching cards.
+* <strong>Implementation</strong> : i used javascript to make the cards flip when the user clicked on them by adding a class with another image called flip. i learned this from youtube.
+* <strong>Result</strong> : the cards flip over then the user clicks and they stay flipped over when two cards are matched.
+* <strong>Verdict </strong> : the cards stay matched and flip back if they dont on all devices with no issues.
 
 
 ## Bugs
@@ -298,6 +299,8 @@ Developing this project has taught me alot about how to provide users needs base
 * W3C CSS Validator
 * JSHint
 * autoprefixer css online
+* jquery
+* popperjs
 
 And a special thanks to my mentor Simon for all his help. www.github.com/Eventyret
 
