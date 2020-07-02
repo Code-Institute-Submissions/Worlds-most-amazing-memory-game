@@ -283,6 +283,20 @@ When deploying the marvel memory game I used GitHub, the following steps were ma
 * Clicked to confirm my selection.
 * Marvel memory game is now live on GitHub Pages.
 
+## Running Holiday Destinations Locally
+
+## Cloning Holiday Destinations from GitHub:
+
+* Navigate to '<strong>fergusthompson/Worlds-most-amazing-memory-game</strong>'.
+* Click the green '<strong>Clone or Download</strong>' button.
+* Copy the <strong>url</strong> in the dropdown box.
+* Using your favourite <strong>IDE</strong> open up your preferred <strong>terminal</strong>.
+* Navigate to your desired file location.
+* Copy the following <strong>code</strong> and input it into your terminal to clone Worlds greatest memory game.
+
+git clone = https://github.com/fergusthompson/Worlds-most-amazing-memory-game.git
+
+
 
 ## Closing Notes:
 
