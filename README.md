@@ -2,31 +2,49 @@
 
 ## Contents
 ---
- ### UX
-  * Project Goals
-  * User Goals
-  * User Stories
-  * Site Owner Goals
-  * User Requirements and Expectations
-  * Design Choices
+ - [UX (User experience)](#ux--user-experience-)
+  * [Project Goals](#project-goals)
+  * [User Goals:](#user-goals-)
+  * [User Stories:](#user-stories-)
+    + [Gary](#gary)
+    + [Steve](#steve)
+    + [Graham](#graham)
+    + [Colin](#colin)
+  * [Site Owner Goals:](#site-owner-goals-)
+- [User Requirements and Expectations](#user-requirements-and-expectations)
+  * [Requirements:](#requirements-)
+  * [Expectations:](#expectations-)
+- [Design Choices](#design-choices)
+  * [Fonts:](#fonts-)
+  * [Colours:](#colours-)
+  * [Styling:](#styling-)
+- [Wireframes:](#wireframes-)
+- [Features developed:](#features-developed-)
+- [Features To be Developed](#features-to-be-developed)
+- [Technologies Used:](#technologies-used-)
+  * [Languages;](#languages-)
+  * [Tools and Libraries:](#tools-and-libraries-)
+- [Testing:](#testing-)
+  * [Testing stories](#testing-stories)
+- [User testing](#user-testing)
+    + [Gary](#gary-1)
+    + [Steve](#steve-1)
+    + [Graham](#graham-1)
+    + [Colin](#colin-1)
+- [Overall:](#overall-)
+  * [Responsiveness -](#responsiveness--)
+  * [Design -](#design--)
+- [Features:](#features-)
+  * [Click counter -](#click-counter--)
+  * [flip cards with matching pictures -](#flip-cards-with-matching-pictures--)
+- [Bugs](#bugs)
+  * [Bugs during development](#bugs-during-development)
+  * [known Bugs](#known-bugs)
+- [Deployment:](#deployment-)
+- [Closing Notes:](#closing-notes-)
+- [Credits:](#credits-)
 
-       + Fonts
-       + Colours
-       + Styling
-
- ### Wireframes 
- ### Features 
-
-   * Features that have been developed
-   
-   * Features that will be implemented in the future
-
- ### Technologies Used 
- ### Testing 
- ### Bugs 
- ### Deployment 
- ### Credits 
-
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 
