@@ -251,19 +251,19 @@ Using vibrant colours like red, blue and white provide great contrast.
 
 ### Bugs during development
 
-* My wincodition variable had a +- instead of a += which meant i couldnt get the code to work for a long time. To fix the issue i had a tutor look to point me in the right direction which helped massively.
+* My wincodition variable had a `+-` instead of a `+=` which meant i couldnt get the code to work for a long time. To fix the issue i had a tutor look to point me in the right direction which helped massively.
 * When i wanted to duplicate the array of heroes at the beginning of my code i couldnt seem to find a way without writing them out twice.  A student saw my code snippet and helped me out.
-* I was having trouble using "" and '' when writing out html code in javascript.  My mentor reminded me about template literals which fixed the issue.
+* I was having trouble using `""` and `''` when writing out html code in javascript.  My mentor reminded me about template literals which fixed the issue.
 * Image sizing has been a massive issue on the site as the hero images will not stay the same as the back face marvel logo images. still need to fix this.
-* i tried making a shuffle function but kept failing because i wasnt using a capital M for the math.random. i had a friend look at it and he pointed it out for me.
-* The shuffle function then didnt work once i added the html function at the top so i had to add a new way of shuffling the cards which did it before they were written into the html.  it didnt work for a long time as i had the wrong spelling in the function after a lot of inspection i found the problem.
-* The gameRef.innerHTML variable was actually gamreRef.appendchild() but this didnt work and i couldnt work out why so after some research i changed it to the code you see now as gameRef.innerHTML() which did the trick.
+* i tried making a `shuffle function` but kept failing because i wasnt using a capital M for the `math.random`. i had a friend look at it and he pointed it out for me.
+* The `shuffle function` then didnt work once i added the html function at the top so i had to add a new way of shuffling the cards which did it before they were written into the html.  it didnt work for a long time as i had the wrong spelling in the function after a lot of inspection i found the problem.
+* The `gameRef.innerHTML` variable was actually `gamreRef.appendchild()` but this didnt work and i couldnt work out why so after some research i changed it to the code you see now as `gameRef.innerHTML()` which did the trick.
 * game wasnt working on iphone so passed the css through an autoprefixer and it fixed the issues.
-* If you were on your final click and you won the game by getting the last pair on your last click the lose screen was coming up.  i built a new function which the took the win and lose condititons in the same function instead of 2 different ones and it esemed to do the trick.
+* If you were on your final click and you won the game by getting the last pair on your last click the lose screen was coming up.  i built a new `function` which the took the win and lose condititons in the same function instead of 2 different ones and it esemed to do the trick.
 
 ### known Bugs
 
-* the image sizing when the card is flipped is wrong. ive tried all sorts of things to change it like changing from px to % then i tried to re size the images using photoshop and re load them back in but that didnt work either.  I think the issue is coming from the way im flipping the cards using the css.
+* the image sizing when the card is flipped is wrong. ive tried all sorts of things to change it like changing from `px` to `%` then i tried to re size the images using photoshop and re load them back in but that didnt work either.  I think the issue is coming from the way im flipping the cards using the css.
 * the cards are not exactly central on ipad but they look ok, theyre slightly off but it affects the iamges once margin or padding is alterered.
 * if you click too quickly on the cards before they turn back over when its checking for a match then the click counter goes down.
 
@@ -283,9 +283,9 @@ When deploying the marvel memory game I used GitHub, the following steps were ma
 * Clicked to confirm my selection.
 * Marvel memory game is now live on GitHub Pages.
 
-## Running Holiday Destinations Locally
+## Running memory game Locally
 
-## Cloning Holiday Destinations from GitHub:
+## Cloning memory game from GitHub:
 
 * Navigate to '<strong>fergusthompson/Worlds-most-amazing-memory-game</strong>'.
 * Click the green '<strong>Clone or Download</strong>' button.
