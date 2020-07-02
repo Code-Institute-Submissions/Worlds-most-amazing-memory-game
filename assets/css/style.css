@@ -190,7 +190,7 @@ img {
 }
 
 @media(max-width: 1080px) {
-  .outcometext {
+  .outcometext .outcomeScreen{
     color: #fff;
     text-align: center;
     font-size: 70px;

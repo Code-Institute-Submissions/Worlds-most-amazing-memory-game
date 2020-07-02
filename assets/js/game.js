@@ -6,7 +6,7 @@ let cardFlipped = false;
 let firstClickedMemoryCard;
 let secondClickedMemoryCard;
 let stopUser = false;
-let winCondition = 7;
+let winCondition = 0;
 let loseCondition = 40;
 
 const heroes = [{
@@ -33,15 +33,13 @@ const heroes = [{
   {
     name: 'the-hulk',
   }
-
 ];
 
 const duplicateHeroes = heroes.concat(heroes);
 
-
 /**
  * shufflingHeroes shuffles the heroes before theyre written to html
- * @param {} 
+ * @param {array} 
  */
 const shuffle = (shufflingHeroes) => {
   shufflingHeroes.sort(() => Math.random() - 0.5);
@@ -49,35 +47,30 @@ const shuffle = (shufflingHeroes) => {
 
 /**
  * heroCards takes the shuffled cards and writes them to html
- * @param {} 
+ * @param {array} 
  */
 const createHtmlForGame = (heroCards) => {
   heroCards.forEach((hero) => {
-    // Create HTML
-
-
     gameRef.innerHTML += ` 
         <div class="memory-card col-4 col-md-3 col-lg-3 my-1" data-framework="${hero.name}">
          <img class="back-face" src="assets/images/marvel-logo.jpg" alt="Marvel Logo">
           <img class="front-face" src="assets/images/${hero.name}.jpg" alt="${hero.name}">
         </div>`;
   });
-
 };
-// Shuffle the heroes
+
 shuffle(duplicateHeroes);
 
-// Write HTML with shuffled heroes
 createHtmlForGame(duplicateHeroes);
+
+const memoryCards = document.querySelectorAll('.memory-card');
+memoryCards.forEach(card => card.addEventListener('click', flipCard));
 
 clickcountRef.innerHTML = "<div class='lose-counter'>40 Clicks Left!</div>";
 
 /**
  * adds the flip class and then runs check for match
  */
-const memoryCards = document.querySelectorAll('.memory-card');
-memoryCards.forEach(card => card.addEventListener('click', flipCard));
-
 function flipCard() {
   loseCondition -= 1;
   checkCondition();
@@ -94,7 +87,6 @@ function flipCard() {
   }
   secondClickedMemoryCard = this;
   checkCardsMatch();
-
 }
 
 /**
@@ -106,8 +98,8 @@ const checkCardsMatch = () => {
     secondClickedMemoryCard.dataset.framework;
 
   cardsMatch ? disableCardFlip() : removeFlipClass();
-
 }
+
 /**
  * checks to make sure you dont lose if you get the final pair on your final click
  */
@@ -167,7 +159,7 @@ const playAgain = () => {
 
 /**
  * winorlose shows the win or lose screen 
- * @param {} 
+ * @param {boolean} 
  */
 const showOutcomeScreen = (winorlose) => {
   let outcomeText;
@@ -184,4 +176,3 @@ const showOutcomeScreen = (winorlose) => {
 
 
 
-memoryCards.forEach(card => card.addEventListener('click', flipCard));

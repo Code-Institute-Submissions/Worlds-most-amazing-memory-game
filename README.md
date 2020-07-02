@@ -51,9 +51,10 @@
 ## UX (User experience)
 ---
 ### Project Goals
-The goal of this project is to provide users with a fun game to play.
-The website needs to be visually appealing enough to encourage user interaction whilst 
-also providing an good User Experience.
+The goal of this project is to build a visually appealing memory game in a comic book style using the marvel universe as the theme.I want it to 
+really stand out and look impressive for the user. Ease of understanding will be key so that the user can jump straight in with no issues.
+As its quite a simple layout it will need to be clean with complementing colours.  I want something the user will enjoy and come back to play again.
+
 
 
 ### User Goals:
@@ -81,6 +82,10 @@ so i expect to be able to play quickly once i load up the page"
 
 "as a user I want something i can pck up quickly on my breaks at work therefore i expect 
 something that doesnt take a long time to learn once i start playing."
+
+* as a user i expect the game to work when i play.
+* as a user i expect the cards to flip when i click them.
+* as a user is expect to be able to see it porperly when im playing.
 
 ### Site Owner Goals:
 
@@ -123,8 +128,8 @@ the imagery of the marvel comic book characters used.
 * Tile colour: #ed1d24 red
 * lettering colour: #fff white
 
-here is a link to the colour pallette ill be using.
-https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png
+<a href="https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png">here</a>is a link to the colour pallette ill be using.
+
 
 
 ### Styling:
@@ -134,8 +139,8 @@ theme for the rest of the site.
 
 ## Wireframes:
 
-All the wireframes can be found here. for desktop tablet and mobile.
-https://github.com/fergusthompson/Worlds-most-amazing-memory-game/tree/master/wireframes
+All the wireframes can be found <a href="https://github.com/fergusthompson/Worlds-most-amazing-memory-game/tree/master/wireframes">here</a>. for desktop tablet and mobile.
+
 
 ## Features developed:
 * click counter
