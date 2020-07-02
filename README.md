@@ -276,10 +276,10 @@ When deploying the marvel memory game I used GitHub, the following steps were ma
 * Opened up GitHub in the browser.
 * Signed in using username and password.
 * Selected my repositories.
-* Navigated to ' fergusthompson Worlds-most-amazing-memory-game '.
-* In the top navigation clicked 'settings'.
+* Navigated to ' <strong>fergusthompson/Worlds-most-amazing-memory-game</strong> '.
+* In the top navigation clicked '<strong>settings</strong>'.
 * Scrolled down to the GitHub Pages area.
-* Selected 'Master Branch' from the 'Source' dropdown menu.
+* Selected '<strong>Master Branch</strong>' from the '<strong>Source</strong>' dropdown menu.
 * Clicked to confirm my selection.
 * Marvel memory game is now live on GitHub Pages.
 
