@@ -2,10 +2,14 @@
 
 ![mockup](https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/webpage%20mockup.png?raw=true)
 
+The goal of this project is to build a visually appealing memory game in a comic book style using the marvel universe as the theme.I want it to 
+really stand out and look impressive for the user. Ease of understanding will be key so that the user can jump straight in with no issues.
+As its quite a simple layout it will need to be clean with complementing colours.  I want something the user will enjoy and come back to play again.
+
+
 ## Contents
 ---
  - [UX (User experience)](#ux--user-experience-)
-  * [Project Goals](#project-goals)
   * [User Goals:](#user-goals-)
   * [User Stories:](#user-stories-)
     + [Gary](#gary)
@@ -51,8 +55,7 @@
 
 
 ## UX (User experience)
----
-### Project Goals
+
 The goal of this project is to build a visually appealing memory game in a comic book style using the marvel universe as the theme.I want it to 
 really stand out and look impressive for the user. Ease of understanding will be key so that the user can jump straight in with no issues.
 As its quite a simple layout it will need to be clean with complementing colours.  I want something the user will enjoy and come back to play again.
@@ -130,7 +133,7 @@ the imagery of the marvel comic book characters used.
 * Tile colour: #ed1d24 red
 * lettering colour: #fff white
 
-These are the coloursI'll be using:
+These are the colours I'll be using:
 
 ![color pallete](https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png?raw=true)
 
@@ -297,7 +300,7 @@ When deploying the marvel memory game I used GitHub, the following steps were ma
 * Navigate to your desired file location.
 * Copy the following <strong>code</strong> and input it into your terminal to clone Worlds greatest memory game.
 
-git clone = https://github.com/fergusthompson/Worlds-most-amazing-memory-game.git
+``` git clone https://github.com/fergusthompson/Worlds-most-amazing-memory-game.git ```
 
 
 
@@ -319,6 +322,6 @@ Developing this project has taught me alot about how to provide users needs base
 * jquery
 * popperjs
 
-And a special thanks to my mentor Simon for all his help. www.github.com/Eventyret
+And a special thanks to my mentor <a href="https://github.com/eventyret">Simon</a> for all his help
 
 
