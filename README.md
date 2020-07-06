@@ -56,12 +56,6 @@ As its quite a simple layout it will need to be clean with complementing colours
 
 ## UX (User experience)
 
-The goal of this project is to build a visually appealing memory game in a comic book style using the marvel universe as the theme.I want it to 
-really stand out and look impressive for the user. Ease of understanding will be key so that the user can jump straight in with no issues.
-As its quite a simple layout it will need to be clean with complementing colours.  I want something the user will enjoy and come back to play again.
-
-
-
 ### User Goals:
 * A website that offers an easily understandable memory game.
 * Attractive call to action to encourage high level of engagement.
@@ -70,6 +64,10 @@ As its quite a simple layout it will need to be clean with complementing colours
     
 
 ### User Stories:
+
+* as a user i expect the game to work when i play.
+* as a user i expect the cards to flip when i click them.
+* as a user is expect to be able to see it porperly when im playing.
 
 #### Gary
 "As a user i want to be able to understand the game very quickly once i start playing."
@@ -87,10 +85,6 @@ so i expect to be able to play quickly once i load up the page"
 
 "as a user I want something i can pck up quickly on my breaks at work therefore i expect 
 something that doesnt take a long time to learn once i start playing."
-
-* as a user i expect the game to work when i play.
-* as a user i expect the cards to flip when i click them.
-* as a user is expect to be able to see it porperly when im playing.
 
 ### Site Owner Goals:
 
@@ -310,17 +304,11 @@ Developing this project has taught me alot about how to provide users needs base
 
 ## Credits: 
 
-* bootstrap - for image setup
 * youtube - tips on making the card flipping functions (vanilla javascript tutorial)
 * google - all phohos used were found on google. also font was from google
 * Coolors.co - I made my colour pallette on their site
 * cacoo.com - I made my wireframes on their site an imported them
-* W3C HTML Validator
-* W3C CSS Validator
-* JSHint
-* autoprefixer css online
-* jquery
-* popperjs
+
 
 And a special thanks to my mentor <a href="https://github.com/eventyret">Simon</a> for all his help
 
