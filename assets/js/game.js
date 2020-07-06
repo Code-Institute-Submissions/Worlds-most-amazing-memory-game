@@ -37,16 +37,16 @@ const heroes = [{
 const duplicateHeroes = heroes.concat(heroes);
 
 /**
- * shufflingHeroes shuffles the heroes before theyre written to html
- * @param {array} 
+ * shuffles the heroes before theyre written to html
+ * @param {Array} shufflingHeroes
  */
 const shuffle = (shufflingHeroes) => {
   shufflingHeroes.sort(() => Math.random() - 0.5);
 };
 
 /**
- * heroCards takes the shuffled cards and writes them to html
- * @param {array} 
+ *  takes the shuffled cards and writes them to html
+ * @param {Array} heroCards
  */
 const createHtmlForGame = (heroCards) => {
   heroCards.forEach((hero) => {
@@ -57,7 +57,7 @@ const createHtmlForGame = (heroCards) => {
         </div>`;
     });
 
-  var memoryCards = document.querySelectorAll('.memory-card');
+  let memoryCards = document.querySelectorAll('.memory-card');
   
   memoryCards.forEach(card => card.addEventListener('click', flipCard));
 };
@@ -158,8 +158,8 @@ const playAgain = () => {
 }
 
 /**
- * winorlose shows the win or lose screen 
- * @param {boolean} 
+ *  shows the win or lose screen 
+ * @param {boolean} winorlose
  */
 const showOutcomeScreen = (winorlose) => {
   let outcomeText;
