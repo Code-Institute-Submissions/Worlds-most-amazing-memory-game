@@ -130,8 +130,9 @@ the imagery of the marvel comic book characters used.
 * Tile colour: #ed1d24 red
 * lettering colour: #fff white
 
-<a href="https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png">here</a> is a link to the colour pallette ill be using.
+These are the coloursI'll be using:
 
+![color pallete](https://github.com/fergusthompson/Worlds-most-amazing-memory-game/blob/master/wireframes/colours%20for%20marvel%20game.png?raw=true)
 
 
 ### Styling:
